@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Victor Reyes",
+    "age": "26",
+    "email": "vreytor@email.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/63a5d8ce77e2176cb0d8e893 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/63a5d8ce77e2176cb0d8e893 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Alan García",
+    "age": "65",
+    "email": "agarcia@email.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/63a5d7e41f2330ce27ec3435 HTTP/1.1
